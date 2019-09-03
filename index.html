@@ -9,7 +9,7 @@
     <title>Music Search</title>
 </head>
 <body>
-    <h1>iTunes Music Search</h1>
+    <h1>API Vibes</h1>
     <div class="music-player">
     <p>Now Playing:</p><p class="nowPlaying"></p>
     <audio controls class="music-bar" id="audio-controls">
@@ -19,19 +19,20 @@
     </div>
     <form>
     <div class="search">
-        <input id="input" placeholder="Search For Artist" type="text"> 
-        <select class="selector">
-                <option value="">All</option>
-                <option value="&attribute=artistTerm">Artist</option>
-                <option value="&attribute=songTerm">Song</option>
-                <!-- <option value="Nickelback">Terrible</option> -->
-        </select>
+        <input id="input" placeholder="Search" type="text"> 
     </div>
     
     <div class="button-line">
         <button id="search-button" value="Search" type="text">Search</button>
+        <select class="selector">
+            <option value="">All</option>
+            <option value="&attribute=artistTerm">Artist</option>
+            <option value="&attribute=songTerm">Song</option>
+            <!-- <option value="Nickelback">Terrible</option> -->
+        </select>
     </div>
-
+    
+    
     </form>
 
     <div class="flex">
