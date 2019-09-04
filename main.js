@@ -22,7 +22,7 @@ function resultsNode (results) {
     <img src="${results[i].artworkUrl100}">
     <h3>${results[i].artistName}</h3>
     <p class="track">${results[i].trackName}</p>
-    <input class="playback" id="playback" type="button" data-track="${results[i].trackName}" src="${results[i].previewUrl}" value="Play">
+    <input class="playback" id="playback" type="button" data-track="${results[i].trackName}" data-artist="${results[i].artistName}" src="${results[i].previewUrl}" value="Play">
     </div>
     `
       return artistDiv   
@@ -55,7 +55,7 @@ q('#artist-results').addEventListener('click', function(event){
         audio.play()
         let newEl = document.createElement('p')
         newEl.classList.add("nowPlaying")
-        newEl.innerHTML = event.target.dataset['track']
+        newEl.innerHTML = "Now playing: " + event.target.dataset['artist'] + " - " + event.target.dataset['track']
         playing.parentNode.replaceChild(newEl, playing)
         playing = document.querySelector('.nowPlaying')
     }
