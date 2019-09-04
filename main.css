@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Gayathri', sans-serif;
 }
 
 body {
@@ -12,13 +13,15 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    color: #80D0C7;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: rgb(168, 255, 249);
+    font-size: 50px;
 }
 
 .search {
     text-align: center;
+    /* width: 400px; */
 }
 
 .button-line {
@@ -30,22 +33,22 @@ h1 {
 }
 
 .music-bar {
-    width: 500px;
+    width: 400px;
     height: 30px;
     color: lightgray;
     margin-bottom: 50px;
 }
 
 #input {
-    width: 500px;
+    width: 400px;
     font-size: 16px;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-bottom: 5px;
     padding-left: 10px;
     border-radius: 25px;
     border-style: solid;
     border-color: lightgray;
-    height: 27px;
+    height: 30px;
     margin-bottom: 50px;
 }
 
@@ -53,7 +56,8 @@ h1 {
     background-color: lightgray;
     border-radius: 25px;
     border: none;
-    padding: 5px 20px;
+    /* padding: 5px 20px; */
+    padding-top: 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -84,21 +88,26 @@ input:focus {
     margin-bottom: 10px;
 }
 
+select {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    /* background-image: url(...);   add custom arrow */
+ }
+
+
 .selector {
+    text-align-last:center;
     background-color: lightgray;
     border-radius: 25px;
     border: none;
-    padding: 5px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    padding-right: 10px;
+    padding-top: 5px;
+
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
-    margin-bottom: 50px;
-    height: 30px;
     width: 100px;
 }
+
 
 .nowPlaying {
     margin-bottom: 20px;
